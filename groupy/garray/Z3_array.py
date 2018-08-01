@@ -54,6 +54,6 @@ def meshgrid(minu=-1, maxu=2, minv=-1, maxv=2, minw=-1, maxw=2):
     Creates a meshgrid of all elements of the group, within the given
     translation parameters.
     '''
-    li = [[u, v, w] for u in xrange(minu, maxu) for v in xrange(minv, maxv) for
-          w in xrange(minw, maxw)]
+    li = [[u, v, w] for u in range(minu, maxu) for v in range(minv, maxv) for
+          w in range(minw, maxw)]
     return Z3Array(li, p='int')
